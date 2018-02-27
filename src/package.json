@@ -1,6 +1,6 @@
 {
   "name": "hide-keyboard",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "repository": {
     "type": "git",
     "url": "https://github.com/heyligengregory/ionic-hide-keyboard"
@@ -16,7 +16,7 @@
     "keyboard",
     "hide"
   ],
-  
+
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/heyligengregory/ionic-hide-keyboard/issues"

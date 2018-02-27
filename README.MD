@@ -1,5 +1,7 @@
 # hide-keyboard
 
+This library is used to keep hide the keyboard in an Ionic application when the focus is on a input.
+
 ## Installation
 
 To install this library, run:
@@ -8,15 +10,9 @@ To install this library, run:
 $ npm install hide-keyboard --save
 ```
 
-## Consuming your library
+## Use library into Ionic Project
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install hide-keyboard
-```
-
-and then from your Angular `AppModule`:
+Once you have installed, you can import library in any Ionic application by doing:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,7 +20,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
+// Import library
 import { HideKeyboardModule } from 'hide-keyboard';
 
 @NgModule({
@@ -34,7 +30,7 @@ import { HideKeyboardModule } from 'hide-keyboard';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
+    // Specify library as an import
     HideKeyboardModule
   ],
   providers: [],
@@ -43,7 +39,7 @@ import { HideKeyboardModule } from 'hide-keyboard';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use its directives in your Ionic application:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
