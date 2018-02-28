@@ -45,21 +45,6 @@ Once your library is imported, you can use its directives in your Ionic applicat
 <!-- You can now use your library component in app.component.html -->
 <ion-input hideKeyboard placeholder="Barcode" name="barcodeField" id="barcodeField" type="text"></ion-input>
 ```
-
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
 ## License
 
 MIT © [Gregory Heyligen](mailto:heyligengregory@gmail.com)
