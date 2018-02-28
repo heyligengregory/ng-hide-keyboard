@@ -47,4 +47,4 @@ Once your library is imported, you can use its directives in your Ionic applicat
 ```
 ## License
 
-MIT © [Gregory Heyligen](mailto:heyligengregory@gmail.com)
+MIT © [Gregory Heyligen](mailto:cudderheyl@gmail.com)
