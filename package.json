@@ -1,6 +1,6 @@
 {
   "name": "hide-keyboard",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "scripts": {
     "build": "gulp build"
   },
@@ -10,7 +10,7 @@
   },
   "author": {
     "name": "Gregory Heyligen",
-    "email": "heyligengregory@gmail.com"
+    "email": "cudderheyl@gmail.com"
   },
   "keywords": [
     "angular",

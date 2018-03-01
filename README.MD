@@ -1,6 +1,6 @@
 # hide-keyboard
 
-This library is used to keep hide the keyboard in an Ionic application when the focus is on a input.
+This library is used to keep the keyboard hidden in an Ionic application when the focus is on a input.
 
 ## Installation
 

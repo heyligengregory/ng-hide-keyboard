@@ -1,13 +1,13 @@
 {
   "name": "hide-keyboard",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/heyligengregory/ionic-hide-keyboard"
   },
   "author": {
     "name": "Gregory Heyligen",
-    "email": "heyligengregory@gmail.com"
+    "email": "cudderheyl@gmail.com"
   },
   "keywords": [
     "angular",
