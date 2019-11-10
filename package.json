@@ -1,12 +1,12 @@
 {
-  "name": "hide-keyboard",
+  "name": "ng-hide-keyboard",
   "version": "0.2.0",
   "scripts": {
     "build": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heyligengregory/ionic-hide-keyboard"
+    "url": "https://github.com/heyligengregory/ng-hide-keyboard"
   },
   "author": {
     "name": "Gregory Heyligen",
@@ -14,31 +14,26 @@
   },
   "keywords": [
     "angular",
-    "ionic",
     "input",
     "keyboard",
     "hide"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/heyligengregory/ionic-hide-keyboard/issues"
+    "url": "https://github.com/heyligengregory/ng-hide-keyboard/issues"
   },
   "devDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
-    "@angular/compiler-cli": "^5.0.0",
+    "@angular/compiler-cli": "^8.2.13",
     "@angular/core": "^5.0.0",
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
-    "@compodoc/compodoc": "^1.0.0-beta.10",
-    "@types/jasmine": "2.5.53",
     "@types/node": "~6.0.60",
-    "angular-in-memory-web-api": "^0.3.2",
-    "codelyzer": "~3.2.0",
     "concurrently": "^3.4.0",
     "core-js": "^2.4.1",
     "fs-extra": "^5.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-rollup": "^2.15.0",
     "lite-server": "^2.3.0",
@@ -53,5 +48,8 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "@angular/cli": "^8.3.18"
   }
 }
