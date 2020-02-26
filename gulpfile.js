@@ -82,7 +82,9 @@ gulp.task('rollup:fesm', async function () {
 
       // Format of generated bundle
       // See "format" in https://rollupjs.org/#core-functionality
-      format: 'es'
+      output: {
+          format: 'es'
+      }
     }))
     .pipe(gulp.dest(distFolder));
 });
@@ -100,6 +102,12 @@ gulp.task('rollup:umd', async function () {
       // See "input" in https://rollupjs.org/#core-functionality
       input: `${buildFolder}/hide-keyboard.module.js`,
 
+        // Format of generated bundle
+        // See "format" in https://rollupjs.org/#core-functionality
+        output: {
+            format: 'umd'
+        },
+
       // Allow mixing of hypothetical and actual files. "Actual" files can be files
       // accessed by Rollup or produced by plugins further down the chain.
       // This prevents errors like: 'path/file' does not exist in the hypothetical file system
@@ -112,24 +120,23 @@ gulp.task('rollup:umd', async function () {
         '@angular/core',
         '@angular/common'
       ],
+      
 
-      // Format of generated bundle
-      // See "format" in https://rollupjs.org/#core-functionality
-      format: 'umd',
-
-      // Export mode to use
-      // See "exports" in https://rollupjs.org/#danger-zone
-      exports: 'named',
-
+      
       // The name to use for the module for UMD/IIFE bundles
       // (required for bundles with exports)
       // See "name" in https://rollupjs.org/#core-functionality
-      name: 'hide-keyboard',
+      ouput: {
+          name: 'hide-keyboard',
+          // See "globals" in https://rollupjs.org/#core-functionality
+          globals: {
+              typescript: 'ts'
+            },
+        // Export mode to use
+        // See "exports" in https://rollupjs.org/#danger-zone
+        exports: 'named',
+    }
 
-      // See "globals" in https://rollupjs.org/#core-functionality
-      globals: {
-        typescript: 'ts'
-      }
 
     }))
     .pipe(rename('hide-keyboard.umd.js'))
@@ -189,7 +196,7 @@ gulp.task('compile', async function () {
     'copy:readme',
     'clean:build',
     'clean:tmp',
-    async function (err) {
+    function (err) {
       if (err) {
         console.log('ERROR:', err.message);
         deleteFolder(distFolder);
