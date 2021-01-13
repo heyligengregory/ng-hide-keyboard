@@ -1,0 +1,27 @@
+{
+  "name": "hide-keyboard",
+  "version": "0.2.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heyligengregory/ng-hide-keyboard"
+  },
+  "author": {
+    "name": "Gregory Heyligen",
+    "email": "cudderheyl@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "ionic",
+    "input",
+    "keyboard",
+    "hide"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyligengregory/ng-hide-keyboard/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9"
+  }
+}

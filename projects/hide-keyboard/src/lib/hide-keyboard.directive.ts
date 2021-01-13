@@ -1,19 +1,19 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
-@Directive(
-	{
-		selector: '[hideKeyboard]'
-	}
-)
+@Directive({
+    selector: '[hideKeyboard]'
+})
 export class HideKeyboardDirective {
-	private readonly: boolean;
+    private readonly: boolean;
+    private focusTimeout = 500;
+
 	constructor(private el: ElementRef) {
 		this.readonly = true;
 		this.setReadOnly(this.readonly)
 
 		setTimeout(() => {
 			this.el.nativeElement.focus();
-		}, 500);
+		}, this.focusTimeout);
 	}
 
 	@HostListener('focus') onFocus() {
@@ -29,7 +29,8 @@ export class HideKeyboardDirective {
 		}, 100);
 	};
 
-	@HostListener('click', ['$event.target']) onClick(input) {
+    @HostListener('click', ['$event.target']) 
+    onClick(input) {
 		this.readonly = true;
 		this.setReadOnly(this.readonly);
 
@@ -37,7 +38,7 @@ export class HideKeyboardDirective {
 			this.readonly = false;
 			this.setReadOnly(this.readonly);
 			this.el.nativeElement.focus();
-		}, 500);
+		}, this.focusTimeout);
 	}
 
 	private setReadOnly(value: boolean): void {
@@ -47,5 +48,4 @@ export class HideKeyboardDirective {
 			this.el.nativeElement.children[1].readOnly = value;
 		};
 	};
-
 }
