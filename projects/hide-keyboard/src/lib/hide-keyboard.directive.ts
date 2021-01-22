@@ -45,7 +45,9 @@ export class HideKeyboardDirective {
 		this.el.nativeElement.readOnly = value;
 		if (this.el.nativeElement.children && this.el.nativeElement.children.length > 0) {
 			this.el.nativeElement.children[0].readOnly = value;
-			this.el.nativeElement.children[1].readOnly = value;
+			if (this.el.nativeElement.children.length > 1) {
+        this.el.nativeElement.children[1].readOnly = value;
+      }
 		};
 	};
 }
