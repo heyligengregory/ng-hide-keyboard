@@ -1,6 +1,6 @@
 {
   "name": "hide-keyboard",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
